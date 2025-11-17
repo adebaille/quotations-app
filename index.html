@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>quotation app</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
 </head>
 <body>
     <h1>Mes citations</h1>
@@ -13,12 +13,14 @@
     <h3>0 citations</h3>
     <hr></hr>
     <form id="formulaire" action="" method="get">
-        <label for="enter citation">Saisir la citation :</label>
+        <label for="citation">Saisir la citation :</label>
         <input type="text" id="citation" name="saisir la citation">
-        <label for="name author">Nom de l'auteur.rice :</label>
-        <input type="text" id="name author" name="nom de l'auteur.rice">
+
+        <label for="author">Nom de l'auteur.rice :</label>
+        <input type="text" id="author" name="nom de l'auteur.rice">
+        
         <div class="button">
-        <button type="submit">Soumettre la citation</button>
+        <button id="button" type="submit">Soumettre la citation</button>
         </div>
     </form>
     <div id="quote-list">
