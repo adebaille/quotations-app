@@ -1,4 +1,5 @@
 let formulaire = document.getElementById("formulaire");
+let quoteCount = 0
 
 formulaire.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -26,4 +27,9 @@ formulaire.addEventListener('submit', (event) => {
 
     const quoteList = document.getElementById('quote-list');
     quoteList.appendChild(div);
+
+    quoteCount = quoteCount += 1;
+
+    let count = document.getElementById("count");
+    count.textContent = `${quoteCount} citations`;
  }
