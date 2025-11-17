@@ -1,5 +1,5 @@
 let formulaire = document.getElementById("formulaire");
-let quoteCount = 0
+let quoteCount = 1
 
 formulaire.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -14,7 +14,7 @@ formulaire.addEventListener('submit', (event) => {
  function addQuote(quote, author){
     const p1 = document.createElement('p');
     p1.className = "text";
-    p1.textContent = quote;
+    p1.textContent = `"${quote}"`;
 
     const p2 = document.createElement('p');
     p2.className = "author";

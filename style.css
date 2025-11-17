@@ -1,30 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dynalight&display=swap');
+
+/* ----- GLOBAL ----- */
+
 body {
-    margin: auto;
+    margin: 0;
+    padding: 2rem;
     text-align: center;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    background: linear-gradient(135deg, #f7f1e6, #f1e7d6);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+/* ----- TITRES ----- */
+
+h1 {
+    font-family: "Cookie", cursive;
+    font-size: 80px;
+    margin: 0;
+    color: #8a4134;
+}
+
+h2 {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    margin-top: -10px;
+    color: #59312a;
+}
+
+h3 {
+    margin-top: 10px;
+    color: #7b5a52;
+}
+
+/* ----- FORMULAIRE ----- */
+
 form {
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: medium;
-    margin: auto;
-    width: 400px;
-    padding: 1em;
-    border: 1px solid #ccc;
-    border-radius: 1em;
+    background: #ffffffb5;
+    backdrop-filter: blur(4px);
+    margin: 2rem auto;
+    width: 420px;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 label {
-    display: flex;
-    justify-content: center;
-    margin: 5px;   
-}
-
-button {
-  margin: 10px
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: 600;
 }
 
 input {
-  width: 300px;
-  box-sizing: border-box;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #d3c4b8;
+    border-radius: 8px;
+    background: #fffdf9;
+}
+
+input:focus {
+    border-color: #b95d52;
+    outline: none;
+    box-shadow: 0 0 5px rgba(185, 93, 82, 0.3);
+}
+
+/* ----- BOUTON ----- */
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #fff;
+    background: #b95d52;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px #8b443a;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #9d4a41;
+}
+
+button:active {
+    transform: translateY(3px);
+    box-shadow: 0 2px #6d362f;
+}
+
+/* ----- CITATIONS ----- */
+
+#quote-list {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.quote {
+    background: #fffdf9;
+    width: 500px;
+    padding: 1.2rem;
+    border-left: 6px solid #b95d52;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+}
+
+.quote .text {
+    font-family: "Dynalight";
+    font-size: 30px;
+    color: #5c4037;
+    margin: 0;
+}
+
+.quote .author {
+    text-align: right;
+    font-size: 16px;
+    margin-top: 5px;
+    color: #8a6c63;
+    font-style: italic;
 }
